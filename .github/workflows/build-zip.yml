@@ -11,10 +11,10 @@ jobs:
       
       - name: Delete unwanted folders
         run: |
-          cd /
+          cd ${{ github.workspace }}
           find . -maxdepth 1 -type d -not -name '.' -not -name 'eso-doom' -exec rm -rf {} +
           
       - uses: actions/upload-artifact@v4
         with:
           name: eso-doom
-          path: /
+          path: ${{ github.workspace }}
