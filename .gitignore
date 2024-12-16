@@ -1,0 +1,6 @@
+﻿/**
+!/.gitignore
+!/.github/
+!/.github/**
+!/eso-doom/
+!/eso-doom/**

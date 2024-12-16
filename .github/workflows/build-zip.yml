@@ -1,0 +1,20 @@
+name: Build Action
+run-name: ${{ github.actor }}'s Build
+on:
+  push:
+    branches: [ main ]
+jobs:
+  Build-Zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Delete unwanted folders
+        run: |
+          cd /
+          find . -maxdepth 1 -type d -not -name '.' -not -name 'eso-doom' -exec rm -rf {} +
+          
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eso-doom
+          path: /
