@@ -1,0 +1,6 @@
+## Title: LibImageWindow
+## Version: 0.1.0
+## APIVersion: 101044
+## Author: akamatsu02
+
+code.lua

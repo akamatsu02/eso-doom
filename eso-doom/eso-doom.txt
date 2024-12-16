@@ -1,0 +1,8 @@
+## Title: ESO Doom
+## Version: 0.1.0
+## APIVersion: 101044
+## Author: akamatsu02
+## SavedVariables: eso_doom_saved_vars
+## DependsOn: LibImageWindow
+
+doom.lua
